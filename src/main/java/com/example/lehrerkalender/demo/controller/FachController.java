@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/fach")
+@RequestMapping("/api/fach")
 public class FachController {
     @Autowired
     private FachService fachService;
