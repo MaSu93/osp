@@ -1,5 +1,6 @@
 package com.example.lehrerkalender.demo.service;
 
+import java.util.List;
 import com.example.lehrerkalender.demo.model.Schueler;
 import com.example.lehrerkalender.demo.repository.SchuelerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +12,7 @@ public class SchuelerService {
     private SchuelerRepository schuelerRepository;
 
     public Schueler getSchueler(Integer id) {
-        return schuelerRepository.findById(nutzerName).orElse(new Schueler());
+        return schuelerRepository.findById(id).orElse(new Schueler());
     }
 
     public Schueler addSchueler(Schueler schueler) {
