@@ -5,6 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface FachRepository extends JpaRepository<Fach, String> {
-    boolean existsByNutzerNameAndPasswort(String nutzerName, String passwort);
+public interface FachRepository extends JpaRepository<Fach, Integer> {
+    boolean existsByName(String name);
 }

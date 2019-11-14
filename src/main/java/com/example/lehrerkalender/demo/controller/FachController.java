@@ -12,10 +12,8 @@ public class FachController {
     @Autowired
     private FachService fachService;
 
-    @GetMapping("/{nutzerName}")
-    public Fach getFach(@PathVariable String nutzerName) {
-        return fachService.getFach(nutzerName);
-    }
+    @GetMapping("/{id}")
+    public Fach getFach(@PathVariable Integer id) { return fachService.getFach(id); }
 
     @PostMapping()
     public Fach addFach(@RequestBody Fach fach) {

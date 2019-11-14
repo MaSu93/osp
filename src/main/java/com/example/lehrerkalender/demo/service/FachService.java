@@ -10,7 +10,7 @@ public class FachService {
     @Autowired
     private FachRepository fachRepository;
 
-    public Fach getFach(String nutzerName) { return fachRepository.findById(nutzerName).orElse(new Fach()); }
+    public Fach getFach(Integer id) { return fachRepository.findById(id).orElse(new Fach()); }
 
     public Fach addFach(Fach fach) {
         return fachRepository.save(fach);

@@ -1,5 +1,6 @@
 package com.example.lehrerkalender.demo.model;
 
+import java.time.LocalDate;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -9,10 +10,13 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "fach")
+@Table(name = "termin")
 @Getter
 @Setter
-public class Fach {
+public class Termin {
     @Id
-    private String name;
+    private String inhalt;
+    private String kommentar;
+    private LocaleDate beginn;
+    private LocaleDate ende;
 }
