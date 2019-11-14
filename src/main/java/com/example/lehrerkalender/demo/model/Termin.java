@@ -18,24 +18,29 @@ import javax.persistence.*;
 @Getter
 @Setter
 public class Termin {
+
     /**
     * @attr automatisch erzeugte ID
     */ 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+
     /**
     * @attr Inhalt des Termin
     */
     private String inhalt;
+
     /**
     * @attr persönilcher Kommentar zum Termin
     */
     private String kommentar;
+
     /**
     * @attr Anfangszeitpunkt des Termins
     */
     private LocalDate beginn;
+    
     /**
     * @attr Endzeitpunkt des Termins
     */

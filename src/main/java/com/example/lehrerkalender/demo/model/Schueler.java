@@ -16,16 +16,19 @@ import javax.persistence.*;
 @Getter
 @Setter
 public class Schueler {
+
     /**
     * @attr automatisch erzeugte ID
     */ 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+
     /**
     * @attr Name des Schülers
     */
     private String name;
+    
     /**
     * @attr Klasse in welcher der Schüler sich befindet
     */

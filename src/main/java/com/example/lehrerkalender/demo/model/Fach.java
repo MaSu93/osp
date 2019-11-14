@@ -23,6 +23,7 @@ public class Fach {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    
     /**
     * @attr Name der Fachrichtung
     */
