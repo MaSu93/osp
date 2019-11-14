@@ -12,7 +12,7 @@ public class KlasseController {
     private KlasseService klasseService;
 
     @GetMapping("/{id}")
-    public Klasse getKlasse(@PathVariable int id) {
+    public Klasse getKlasse(@PathVariable Integer id) {
         return klasseService.getKlasse(id);
     }
 

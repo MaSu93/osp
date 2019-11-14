@@ -10,7 +10,7 @@ public class KursService {
     @Autowired
     private KursRepository kursRepository;
 
-    public Kurs getKurs(int id) {
+    public Kurs getKurs(Integer id) {
         return kursRepository.findById(id).orElse(new Kurs());
     }
 

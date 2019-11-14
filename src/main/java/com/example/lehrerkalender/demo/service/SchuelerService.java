@@ -10,7 +10,7 @@ public class SchuelerService {
     @Autowired
     private SchuelerRepository schuelerRepository;
 
-    public Schueler getSchueler(int id) {
+    public Schueler getSchueler(Integer id) {
         return schuelerRepository.findById(nutzerName).orElse(new Schueler());
     }
 

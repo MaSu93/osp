@@ -13,6 +13,6 @@ import javax.persistence.Table;
 @Setter
 public class Klasse {
     @Id
-    private int id;
+    private Integer id;
     private Lehrer klassenlehrer;
 }

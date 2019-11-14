@@ -12,7 +12,7 @@ public class SchuelerNotizController {
     private SchuelerNotizService schuelerNotizService;
  
     @GetMapping("/{id}")
-    public SchuelerNotiz getSchuelerNotiz(@PathVariable int id) {
+    public SchuelerNotiz getSchuelerNotiz(@PathVariable Integer id) {
         return schuelerNotizService.getSchuelerNotiz(id);
     }
 
@@ -21,8 +21,8 @@ public class SchuelerNotizController {
         return schuelerNotizService.addSchuelerNotiz(schuelerNotiz);
     }
 
-    @GetMapping("/bySchueler/{id}")
-    public List<SchuelerNotiz> getAllSchuelerNotizenBySchuelerId(@PathVariable int schuelerId){
+    @GetMapping("/bySchueler/{schuelerid}")
+    public List<SchuelerNotiz> getAllSchuelerNotizenBySchuelerId(@PathVariable Integer schuelerId){
         return schuelerNotizService.getSchuelerNotizBySchuelerId(schuelerId);
     }
 }

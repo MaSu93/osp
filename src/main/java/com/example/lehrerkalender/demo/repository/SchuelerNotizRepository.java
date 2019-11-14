@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface SchuelerNotizRepository extends JpaRepository<Schuelernotiz, int> {
+public interface SchuelerNotizRepository extends JpaRepository<Schuelernotiz, Integer> {
 
     List<SchuelerNotiz> findAllBySchuelerId(int id);
 }

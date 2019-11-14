@@ -13,7 +13,7 @@ import javax.persistence.Table;
 @Setter
 public class Kurs {
     @Id
-    private int id;
+    private Integer id;
     private Lehrer lehrer;
     private Klasse klasse;
     private Fach fach;

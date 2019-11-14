@@ -13,7 +13,7 @@ public class SchuelerController {
     private SchuelerService schuelerService;
  
     @GetMapping("/{id}")
-    public Schueler getSchueler(@PathVariable int id) {
+    public Schueler getSchueler(@PathVariable Integer id) {
         return schuelerService.getSchueler(id);
     }
 

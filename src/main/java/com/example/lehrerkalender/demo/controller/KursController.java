@@ -12,7 +12,7 @@ public class KursController {
     private KursService kursService;
 
     @GetMapping("/{id}")
-    public Kurs getKurs(@PathVariable int id) {
+    public Kurs getKurs(@PathVariable Integer id) {
         return kursService.getKurs(id);
     }
 
