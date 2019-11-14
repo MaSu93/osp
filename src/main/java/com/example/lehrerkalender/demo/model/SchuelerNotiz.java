@@ -15,7 +15,7 @@ public class Kurs {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private iIntegernt schuelerId;
+    private Integer schuelerId;
     private String key;
     private String value;
 }
