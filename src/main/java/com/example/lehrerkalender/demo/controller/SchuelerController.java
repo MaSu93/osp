@@ -21,7 +21,7 @@ public class SchuelerController {
         return schuelerService.addSchueler(schueler);
     }
 
-    @GetMapping("/byClass")
+    @GetMapping("/byKlasse")
     public List<Schueler> getSchuelerByKlasse(@RequestBody Klasse klasse){
         return schuelerService.getSchuelerByKlasse(klasse);
     }
