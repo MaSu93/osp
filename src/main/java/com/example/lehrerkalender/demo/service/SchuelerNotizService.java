@@ -7,13 +7,40 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
+/**
+ * @class SchuelerNotizService
+ */
 public class SchuelerNotizService {
     @Autowired
+    /**
+     * @attr schuelerNotizRepository SchuelerNotizRepository
+     */
     private SchuelerNotizRepository schuelerNotizRepository;
 
-    public SchuelerNotiz getSchuelerNotiz(int id) { return schuelerNotizRepository.findById(id).orElse(new SchuelerNotiz()); }
+    /**
+     * Liefert die Schülernotiz mit gegebener Id zurück oder eine neue, wenn sie nicht vorhanden ist
+     * @param id Integer
+     * @return SchuelerNotiz
+     */
+    public SchuelerNotiz getSchuelerNotiz(Integer id) {
+        return schuelerNotizRepository.findById(id).orElse(new SchuelerNotiz());
+    }
 
-    public SchuelerNotiz addSchuelerNotiz(SchuelerNotiz schuelerNotiz) { return schuelerNotizRepository.save(schuelerNotiz); }
+    /**
+     * Die übergebene Schülernotiz wird in der Datenbank gespeichert
+     * @param schuelerNotiz SchuelerNotiz
+     * @return SchuelerNotiz
+     */
+    public SchuelerNotiz addSchuelerNotiz(SchuelerNotiz schuelerNotiz) {
+        return schuelerNotizRepository.save(schuelerNotiz);
+    }
 
-    public List<SchuelerNotiz> getAllSchuelerNotizenBySchuelerId(int schuelerId){ return schuelerNotizRepository.findAllBySchuelerId(schuelerId); }
+    /**
+     * Liefert alle Schülernotizen zu einem Schüler mit der gegebenen Id zurück
+     * @param schuelerId Integer
+     * @return List<SchuelerNotiz>
+     */
+    public List<SchuelerNotiz> getAllSchuelerNotizenBySchuelerId(Integer schuelerId){
+        return schuelerNotizRepository.findAllBySchuelerId(schuelerId);
+    }
 }
