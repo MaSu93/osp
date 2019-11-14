@@ -26,4 +26,9 @@ public class LehrerController {
     public Lehrer addLehrer(@RequestBody Lehrer lehrer) {
         return lehrerService.addLehrer(lehrer);
     }
+
+    @PostMapping("/validate")
+    public boolean validateLehrer (@RequestBody Lehrer lehrer) {
+        return lehrerService.validateLehrer(lehrer);
+    }
 }
