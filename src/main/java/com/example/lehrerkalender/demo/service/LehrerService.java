@@ -17,4 +17,10 @@ public class LehrerService {
     public Lehrer addLehrer(Lehrer lehrer) {
         return lehrerRepository.save(lehrer);
     }
+
+    public boolean validateLehrer (Lehrer lehrer){
+        return lehrerRepository.existsByNutzerNameAndPasswort(
+                lehrer.getNutzerName(),
+                lehrer.getPasswort());
+    }
 }
