@@ -24,6 +24,6 @@ public class SchuelerNotizController {
 
     @GetMapping("/bySchueler/{schuelerid}")
     public List<SchuelerNotiz> getAllSchuelerNotizenBySchuelerId(@PathVariable Integer schuelerId){
-        return schuelerNotizService.getSchuelerNotizBySchuelerId(schuelerId);
+        return schuelerNotizService.getAllSchuelerNotizenBySchuelerId(schuelerId);
     }
 }

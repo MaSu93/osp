@@ -2,6 +2,7 @@ package com.example.lehrerkalender.demo.service;
 
 import java.util.List;
 import com.example.lehrerkalender.demo.model.Schueler;
+import com.example.lehrerkalender.demo.model.Klasse;
 import com.example.lehrerkalender.demo.repository.SchuelerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

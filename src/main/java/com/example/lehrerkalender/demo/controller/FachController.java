@@ -1,6 +1,5 @@
 package com.example.lehrerkalender.demo.controller;
 
-
 import com.example.lehrerkalender.demo.model.Fach;
 import com.example.lehrerkalender.demo.service.FachService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,5 @@
 package com.example.lehrerkalender.demo.model;
 
-
 import lombok.Getter;
 import lombok.Setter;
 

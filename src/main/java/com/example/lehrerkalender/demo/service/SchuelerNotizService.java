@@ -11,15 +11,9 @@ public class SchuelerNotizService {
     @Autowired
     private SchuelerNotizRepository schuelerNotizRepository;
 
-    public SchuelerNotiz getSchuelerNotiz(int id) {
-        return schuelerNotizRepository.findById(id).orElse(new SchuelerNotiz());
-    }
+    public SchuelerNotiz getSchuelerNotiz(int id) { return schuelerNotizRepository.findById(id).orElse(new SchuelerNotiz()); }
 
-    public SchuelerNotiz addSchuelerNotiz(SchuelerNotiz schuelerNotiz) {
-        return schuelerNotizRepository.save(schuelerNotiz);
-    }
+    public SchuelerNotiz addSchuelerNotiz(SchuelerNotiz schuelerNotiz) { return schuelerNotizRepository.save(schuelerNotiz); }
 
-    public List<SchuelerNotiz> getAllSchuelerNotizenBySchuelerId(int schuelerId){
-        return schuelerNotizRepository.findAllBySchuelerId(schuelerId);
-    }
+    public List<SchuelerNotiz> getAllSchuelerNotizenBySchuelerId(int schuelerId){ return schuelerNotizRepository.findAllBySchuelerId(schuelerId); }
 }
