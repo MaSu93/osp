@@ -11,7 +11,7 @@ import javax.persistence.Table;
 @Table(name = "schülernotiz")
 @Getter
 @Setter
-public class Kurs {
+public class SchuelerNotiz {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
