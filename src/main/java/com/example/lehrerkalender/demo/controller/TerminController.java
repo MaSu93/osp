@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/termin")
+@RequestMapping("/api/termin")
 public class TerminController {
     @Autowired
     private TerminService terminService;

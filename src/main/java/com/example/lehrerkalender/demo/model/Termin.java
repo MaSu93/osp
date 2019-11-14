@@ -15,8 +15,9 @@ import javax.persistence.Table;
 @Setter
 public class Termin {
     @Id
+    private Integer id;
     private String inhalt;
     private String kommentar;
-    private LocaleDate beginn;
-    private LocaleDate ende;
+    private LocalDate beginn;
+    private LocalDate ende;
 }

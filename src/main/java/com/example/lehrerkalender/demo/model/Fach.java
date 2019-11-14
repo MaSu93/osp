@@ -14,5 +14,6 @@ import javax.persistence.Table;
 @Setter
 public class Fach {
     @Id
+    private Integer id;
     private String name;
 }
