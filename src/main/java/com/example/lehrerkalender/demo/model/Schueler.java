@@ -13,6 +13,7 @@ import javax.persistence.Table;
 @Setter
 public class Schueler {
     @Id
+    @GeneratedValue
     private Integer id;
     private String name;
     private Klasse klasse;

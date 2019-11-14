@@ -13,6 +13,7 @@ import javax.persistence.Table;
 @Setter
 public class Kurs {
     @Id
+    @GeneratedValue
     private Integer id;
     private iIntegernt schuelerId;
     private String key;
