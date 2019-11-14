@@ -1,7 +1,7 @@
 package com.example.lehrerkalender.demo.controller;
 
 import com.example.lehrerkalender.demo.model.Klasse;
-import com.example.lehrerkalender.demo.service.LehrerService;
+import com.example.lehrerkalender.demo.service.KlasseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,8 +12,13 @@ public class KlasseController {
     private KlasseService klasseService;
 
     @GetMapping("/{id}")
-    public Lehrer getLehrer(@PathVariable int id) {
+    public Klasse getKlasse(@PathVariable int id) {
         return klasseService.getKlasse(id);
+    }
+
+    @PostMapping()
+    public Klasse addKlasse(@RequestBody Klasse klasse) {
+        return klasseService.addKlasse(klasse);
     }
 
 }

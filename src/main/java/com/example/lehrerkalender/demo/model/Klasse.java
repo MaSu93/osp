@@ -11,7 +11,7 @@ import javax.persistence.Table;
 @Table(name = "klasse")
 @Getter
 @Setter
-public class Schueler {
+public class Klasse {
     @Id
     private int id;
     private Lehrer klassenlehrer;

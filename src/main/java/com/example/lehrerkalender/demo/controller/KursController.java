@@ -16,4 +16,9 @@ public class KursController {
         return kursService.getKurs(id);
     }
 
+    @PostMapping()
+    public Kurs addKurs(@RequestBody Kurs kurs) {
+        return kursService.addKurs(kurs);
+    }
+
 }

@@ -16,4 +16,5 @@ public class Kurs {
     private int id;
     private Lehrer lehrer;
     private Klasse klasse;
+    private Fach fach;
 }

@@ -1,5 +1,6 @@
 package com.example.lehrerkalender.demo.controller;
 
+import java.util.List;
 import com.example.lehrerkalender.demo.model.Schueler;
 import com.example.lehrerkalender.demo.service.SchuelerService;
 import org.springframework.beans.factory.annotation.Autowired;
