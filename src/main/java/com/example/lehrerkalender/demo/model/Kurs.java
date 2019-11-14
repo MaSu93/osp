@@ -6,12 +6,14 @@ import lombok.Setter;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "fach")
+@Table(name = "kurs")
 @Getter
 @Setter
-public class Fach {
+public class Kurs {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String name;
+    private Lehrer lehrer;
+    private Klasse klasse;
+    private Fach fach;
 }
