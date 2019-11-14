@@ -14,5 +14,7 @@ public class Schueler {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
+    @ManyToOne
+    @JoinColumn(name = "idKlasse")
     private Klasse klasse;
 }

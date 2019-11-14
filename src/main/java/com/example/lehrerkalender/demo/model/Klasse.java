@@ -13,5 +13,7 @@ public class Klasse {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @ManyToOne
+    @JoinColumn(name = "klassenlehrer")
     private Lehrer klassenlehrer;
 }
