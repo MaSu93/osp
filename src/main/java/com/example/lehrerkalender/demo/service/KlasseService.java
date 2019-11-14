@@ -10,7 +10,7 @@ public class KlasseService {
     @Autowired
     private KlasseRepository klasseRepository;
 
-    public klasse getklasse(int id) {
+    public Klasse getKlasse(int id) {
         return klasseRepository.findById(id).orElse(new Klasse());
     }
 

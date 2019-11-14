@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/klasse")
+@RequestMapping("/api/klasse")
 public class KlasseController {
     @Autowired
     private KlasseService klasseService;
