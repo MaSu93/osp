@@ -13,7 +13,7 @@ import javax.persistence.Table;
 @Setter
 public class Kurs {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private iIntegernt schuelerId;
     private String key;

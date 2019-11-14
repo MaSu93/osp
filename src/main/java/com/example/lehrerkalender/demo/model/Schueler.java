@@ -13,7 +13,7 @@ import javax.persistence.Table;
 @Setter
 public class Schueler {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
     private Klasse klasse;

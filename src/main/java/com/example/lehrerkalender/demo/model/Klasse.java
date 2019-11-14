@@ -13,7 +13,7 @@ import javax.persistence.Table;
 @Setter
 public class Klasse {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private Lehrer klassenlehrer;
 }
