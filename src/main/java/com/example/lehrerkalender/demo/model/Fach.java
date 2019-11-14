@@ -17,9 +17,14 @@ import javax.persistence.*;
 @Setter
 public class Fach {
 
+    /**
+    * @attr automatisch erzeugte ID
+    */ 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    //@attr Name der Fachrichtung
+    /**
+    * @attr Name der Fachrichtung
+    */
     private String name;
 }

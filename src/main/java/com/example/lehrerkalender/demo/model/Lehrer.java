@@ -16,11 +16,17 @@ import javax.persistence.*;
 @Getter
 @Setter
 public class Lehrer {
-    //@attr Nutzername zum anmelden des Lehrers
+    /**
+    * @attr Nutzername zum anmelden des Lehrers
+    */
     @Id
     private String nutzerName;
-    //@attr Passwort zum anmelden des Lehrers
+    /**
+    * @attr Passwort zum anmelden des Lehrers
+    */
     private String passwort;
-    //@attr Name des Lehrers
+    /**
+    * @attr Name des Lehrers
+    */
     private String name;
 }

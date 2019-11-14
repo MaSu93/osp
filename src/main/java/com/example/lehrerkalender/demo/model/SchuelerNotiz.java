@@ -17,13 +17,22 @@ import javax.persistence.*;
 @Getter
 @Setter
 public class SchuelerNotiz {
+    /**
+    * @attr automatisch erzeugte ID
+    */ 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    //@attr Schüler welchem die Notiz zugeordnet ist
+    /**
+    * @attr Schüler welchem die Notiz zugeordnet ist
+    */
     private Integer schuelerId;
-    //@attr Name der Notiz
+    /**
+    * @attr Name der Notiz
+    */
     private String key;
-    //@attr Wert der Notiz
+    /**
+    * @attr Wert der Notiz
+    */
     private String value;
 }
