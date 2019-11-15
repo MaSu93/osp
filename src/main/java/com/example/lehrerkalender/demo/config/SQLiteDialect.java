@@ -15,6 +15,10 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 import javax.sql.DataSource;
 
+/**
+ * Konfiguration, um sqlite lauffähig zu kriegen
+ * @class SQLiteDialect
+ */
 public class SQLiteDialect extends Dialect {
     public SQLiteDialect() {
         registerColumnType(Types.BIT, "integer");

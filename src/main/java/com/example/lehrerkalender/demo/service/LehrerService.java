@@ -12,14 +12,14 @@ import org.springframework.stereotype.Service;
 public class LehrerService {
     @Autowired
     /**
-     * @attr lehrerRepository LehrerRepository
+     * @attr {@link LehrerRepository lehrerRepository}
      */
     private LehrerRepository lehrerRepository;
 
     /**
      * Liefert den Lehrer mit gegebenem Nutzernamen zurück oder einen neuen, wenn er nicht vorhanden ist
      * @param nutzerName String
-     * @return Lehrer
+     * @return {@link Lehrer Lehrer}
      */
     public Lehrer getLehrer(String nutzerName) {
         return lehrerRepository.findById(nutzerName).orElse(new Lehrer());
@@ -27,16 +27,16 @@ public class LehrerService {
 
     /**
      * Der übergebene Lehrer wird in der Datenbank gespeichert
-     * @param lehrer Lehrer
-     * @return Lehrer
+     * @param lehrer {@link Lehrer Lehrer}
+     * @return {@link Lehrer Lehrer}
      */
     public Lehrer addLehrer(Lehrer lehrer) {
         return lehrerRepository.save(lehrer);
     }
 
     /**
-     * Liefert zurück ober der Lehrer mit dem angegebenen Namen unb Passwort in der Datenbank existiert
-     * @param lehrer Lehrer
+     * Liefert zurück ob der der Lehrer mit dem angegebenen Namen unb Passwort in der Datenbank existiert
+     * @param lehrer {@link Lehrer Lehrer}
      * @return boolean
      */
     public boolean validateLehrer (Lehrer lehrer){
