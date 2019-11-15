@@ -12,7 +12,7 @@ import { blue } from "@material-ui/core/colors";
 import { appointments } from "./data";
 import './Calender.scss';
 import plusicon from '../../assets/img/plusicon.png';
-import calender from '../../assets/img/calender.jpg';
+import calender from '../../assets/img/calendar.svg';
 import Navigation from '../../components/Navigation';
 import TransitionsModal from '../../components/Modal';
 
