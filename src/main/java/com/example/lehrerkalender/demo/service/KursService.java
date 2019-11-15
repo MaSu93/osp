@@ -12,14 +12,14 @@ import org.springframework.stereotype.Service;
 public class KursService {
     @Autowired
     /**
-     * @attr kursRepository KursRepository
+     * @attr {@link KursRepository kursRepository}
      */
     private KursRepository kursRepository;
 
     /**
      * Liefert den Kurs mit gegebener Id zurück oder einen neuen, wenn er nicht vorhanden ist
      * @param id Integer
-     * @return Kurs
+     * @return {@link Kurs Kurs}
      */
     public Kurs getKurs(Integer id) {
         return kursRepository.findById(id).orElse(new Kurs());
@@ -27,8 +27,8 @@ public class KursService {
 
     /**
      * Der übergebene Kurs wird in der Datenbank gespeichert
-     * @param kurs Kurs
-     * @return Kurs
+     * @param kurs {@link Kurs Kurs}
+     * @return {@link Kurs Kurs}
      */
     public Kurs addKurs(Kurs kurs) {
         return kursRepository.save(kurs);

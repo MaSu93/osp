@@ -3,6 +3,10 @@ package com.example.lehrerkalender.demo.config;
 import org.hibernate.MappingException;
 import org.hibernate.dialect.identity.IdentityColumnSupportImpl;
 
+/**
+ * Konfiguration, um sqlite lauffähig zu kriegen
+ * @class SQLiteIdentityColumnSupport
+ */
 public class SQLiteIdentityColumnSupport extends IdentityColumnSupportImpl {
     @Override
     public boolean supportsIdentityColumns() {
