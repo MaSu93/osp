@@ -28,9 +28,10 @@ public class Schueler {
     * @attr Name des Schülers
     */
     private String name;
-    
     /**
     * @attr Klasse in welcher der Schüler sich befindet
     */
+    @ManyToOne
+    @JoinColumn(name = "idKlasse")
     private Klasse klasse;
 }

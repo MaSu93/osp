@@ -22,9 +22,10 @@ public class Klasse {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
     /**
     * @attr Klassenlehrer der Schulklasse
     */
+    @ManyToOne
+    @JoinColumn(name = "klassenlehrer")
     private Lehrer klassenlehrer;
 }
