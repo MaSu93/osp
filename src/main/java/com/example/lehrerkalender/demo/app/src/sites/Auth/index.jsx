@@ -2,6 +2,7 @@ import React from 'react';
 import './Auth.scss';
 import request from 'axios';
 import { withRouter } from 'react-router-dom';
+import Navigation from '../../components/Navigation';
 
 class Auth extends React.Component {
   state = {
@@ -25,7 +26,7 @@ class Auth extends React.Component {
     await request({ url, method: "POST", data })
       .then(res => this.setState({ isValidUser: res.data }));
 
-    this.state.isValidUser || this.state.dummy ? this.props.history.push('/overview') : this.onError();
+    this.state.isValidUser ? this.props.history.push('/overview') : this.onError();
   }
 
   onError = () => {
@@ -36,9 +37,9 @@ class Auth extends React.Component {
   render() {
     return (
       <div>
+        <Navigation />
         <h1 className="title">
-          <div>Lehrerkalender</div>
-          <div>2019</div>
+          <div>Willkommen</div>
         </h1>
 
         <form>
