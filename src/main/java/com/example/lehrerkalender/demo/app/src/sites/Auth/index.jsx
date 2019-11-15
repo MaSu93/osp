@@ -47,7 +47,7 @@ class Auth extends React.Component {
             <input type="text" name="nutzerName" id="username" className="input" maxlength="30" placeholder="Username" />
           </label>
           <label>
-            <input type="text" name="passwort" id="passwort" className="input" maxlength="40" placeholder="Passwort" />
+            <input type="password" name="passwort" id="passwort" className="input" maxlength="40" placeholder="Passwort" />
             <div className="error-msg">Die Eingabe des Benutzers oder Passworts ist falsch.</div>
           </label>
         </form>
