@@ -1,0 +1,46 @@
+#calender {
+  border: thin solid black;
+}
+
+.plusicon,
+.cal {
+  cursor: pointer;
+}
+
+.header-wrapper {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: thin solid black;
+}
+
+.day-of-week,
+.date-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 95%;
+  margin: 0 auto;
+}
+
+.day-of-week > * {
+  border-top: thin solid black;
+  border-left: thin solid black;
+  border-bottom: thin solid black;
+  padding: 12px;
+
+  &:last-child {
+    border-right: thin solid black;
+  }
+}
+
+.date-grid > * {
+  border-left: thin solid black;
+  border-bottom: thin solid black;
+  padding: 12px;
+
+  &:last-child {
+    border-right: thin solid black;
+  }
+}

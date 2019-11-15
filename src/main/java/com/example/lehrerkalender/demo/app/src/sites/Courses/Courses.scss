@@ -1,0 +1,31 @@
+.title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    display: block;
+    padding: 20px;
+    border-top: thin solid lightseagreen;
+    border-left: thin solid lightseagreen;
+    border-right: thin solid lightseagreen;
+    cursor: pointer;
+    background: lightseagreen;
+    border-bottom: thin solid white;
+    width: 90%;
+    margin: 0 auto;
+
+    &:last-child {
+      border-bottom: thin solid lightseagreen;
+    }
+
+    &:hover {
+      background: white;
+      border: thin solid lightseagreen;
+    }
+  }
+}

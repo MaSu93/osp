@@ -1,0 +1,37 @@
+.title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+button {
+  margin-bottom: 30px;
+  color: lightseagreen;
+  background: white;
+  border: thin solid lightseagreen;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background: lightseagreen;
+    border: thin solid white;
+    color: white;
+  }
+}
+
+.logout {
+  position: absolute;
+  top: 21px;
+  right: 21px;
+  font-size: 16px;
+  border: thin solid black;
+  padding: 5px;
+  color: lightseagreen;
+  border: thin solid lightseagreen;
+  cursor: pointer;
+
+  &:hover {
+    color: white;
+    background: lightseagreen;
+    border: thin solid white;
+  }
+}
