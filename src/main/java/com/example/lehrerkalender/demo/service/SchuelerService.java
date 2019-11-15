@@ -39,7 +39,7 @@ public class SchuelerService {
     /**
      * Liefert alle Schüler in der übergebenen Klasse zurück
      * @param klasse Klasse
-     * @return List<Schueler>
+     * @return List&lt;Schueler&gt;
      */
     public List<Schueler> getSchuelerByKlasse(Klasse klasse){
         return schuelerRepository.findByKlasse(klasse);

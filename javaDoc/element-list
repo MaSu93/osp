@@ -1,0 +1,6 @@
+com.example.lehrerkalender.demo
+com.example.lehrerkalender.demo.config
+com.example.lehrerkalender.demo.controller
+com.example.lehrerkalender.demo.model
+com.example.lehrerkalender.demo.repository
+com.example.lehrerkalender.demo.service

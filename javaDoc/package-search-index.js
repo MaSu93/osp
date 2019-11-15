@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.example.lehrerkalender.demo"},{"l":"com.example.lehrerkalender.demo.config"},{"l":"com.example.lehrerkalender.demo.controller"},{"l":"com.example.lehrerkalender.demo.model"},{"l":"com.example.lehrerkalender.demo.repository"},{"l":"com.example.lehrerkalender.demo.service"}]
