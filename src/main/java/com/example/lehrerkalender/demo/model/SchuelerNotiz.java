@@ -28,6 +28,8 @@ public class SchuelerNotiz {
     /**
     * @attr Schüler welchem die Notiz zugeordnet ist
     */
+    @ManyToOne
+    @JoinColumn(name = "idSchueler")
     private Schueler schuelerId;
 
     /**
