@@ -1,0 +1,23 @@
+version: '3.1'
+
+services:
+  db:
+    image: mariadb
+    restart: on-failure
+    environment:
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes
+      - MYSQL_DATABASE=lehrerkalender
+      - MYSQL_USER=fia71
+      - MYSQL_PASSWORD=osp
+    ports:
+      - 3306:3306
+    networks:
+      - backend
+    volumes:
+      - mariadb:/var/lib/mysql
+
+networks:
+  backend:
+
+volumes:
+  mariadb:
