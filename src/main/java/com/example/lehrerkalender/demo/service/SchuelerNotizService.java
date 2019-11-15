@@ -38,7 +38,7 @@ public class SchuelerNotizService {
     /**
      * Liefert alle Schülernotizen zu einem Schüler mit der gegebenen Id zurück
      * @param schuelerId Integer
-     * @return List<SchuelerNotiz>
+     * @return List&lt;SchuelerNotiz&gt;
      */
     public List<SchuelerNotiz> getAllSchuelerNotizenBySchuelerId(Integer schuelerId){
         return schuelerNotizRepository.findAllBySchuelerId(schuelerId);

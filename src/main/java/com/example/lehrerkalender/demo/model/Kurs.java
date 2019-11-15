@@ -7,16 +7,9 @@ import javax.persistence.*;
 
 /**
  * repräsentiert einen Schulkurs
-<<<<<<< Updated upstream
  * @class Kurs
  * @author Janik Schaaf
  * @version 1.0
-=======
- *
- * @author Janik Schaaf
- * @version 1.0
- * @class Kurs
->>>>>>> Stashed changes
  */
 @Entity
 @Table(name = "kurs")
