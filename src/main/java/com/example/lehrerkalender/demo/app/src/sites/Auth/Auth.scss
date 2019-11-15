@@ -26,11 +26,8 @@ label {
   border-bottom: thin solid black;
   border-right: thin solid black;
   outline: none;
+  max-width: 500px;
 }
-
-// #username, #passwort {
-//   margin-bottom: 30px;
-// }
 
 button {
   display: block;
@@ -39,4 +36,5 @@ button {
   background: none;
   border: thin solid black;
   padding: 10px;
+  max-width: 150px;
 }

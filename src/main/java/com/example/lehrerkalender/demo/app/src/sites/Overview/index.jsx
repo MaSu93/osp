@@ -1,6 +1,7 @@
 import React from 'react';
 import './Overview.scss';
 import { withRouter } from 'react-router-dom';
+import Navigation from '../../components/Navigation';
 
 class Overview extends React.Component {
   handleLogout = () => this.props.history.push("/");
@@ -10,9 +11,9 @@ class Overview extends React.Component {
   render() {
     return (
       <div>
+        <Navigation />
         <h1 className="title">
-          <div>Lehrerkalender</div>
-          <div>2019</div>
+          <div>Übersicht</div>
           <div className="logout" onClick={this.handleLogout}>Logout</div>
         </h1>
         <button onClick={this.redirectCalender}>Kalenderansicht</button>
