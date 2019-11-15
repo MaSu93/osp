@@ -6,7 +6,7 @@ import lombok.Setter;
 import javax.persistence.*;
 
 /**
- * repräsentiert eine Schülernotiz welche eine lehrperson 
+ * repräsentiert eine Schülernotiz welche eine Lehrperson
  * zu einem Schüler/einer Schülerin machen kann
  * @class SchuelerNotiz
  * @author Janik Schaaf
@@ -28,7 +28,9 @@ public class SchuelerNotiz {
     /**
     * @attr Schüler welchem die Notiz zugeordnet ist
     */
-    private Integer schuelerId;
+    @ManyToOne
+    @JoinColumn(name = "idSchueler")
+    private Schueler schuelerId;
 
     /**
     * @attr Name der Notiz

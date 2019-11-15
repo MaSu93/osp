@@ -28,6 +28,7 @@ public class LehrerController {
     }
 
     @PostMapping("/validate")
+    @ApiOperation("validiert die Nutzerdaten eines Lehrers")
     public boolean validateLehrer (@RequestBody Lehrer lehrer) {
         return lehrerService.validateLehrer(lehrer);
     }

@@ -13,18 +13,38 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 
+/**
+ * Konfiguration für die swagger-ui
+ * @class SwaggerConfig
+ */
 @EnableSwagger2
 @PropertySource("classpath:swagger.properties")
 @ComponentScan(basePackages = "com.example.lehrerkalender.demo.controller")
 @Configuration
 public class SwaggerConfig {
 
+    /**
+     * @attr Die Version der API
+     */
     private static final String SWAGGER_API_VERSION = "1.0";
+    /**
+     * @attr Der Lizenztext
+     */
     private static final String LICENSE_TEXT = "License";
 
+    /**
+     * @attr Überschrift für die API
+     */
     private static final String TITLE = "Lehrerkalender REST API";
+    /**
+     * @attr Beschreibung der API
+     */
     private static final String DESCRIPTION = "RESTful API for Lehrerkalender";
 
+    /**
+     * Baut die API-Info auf
+     * @return {@link ApiInfo ApiInfo}
+     */
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title(TITLE)
@@ -34,6 +54,10 @@ public class SwaggerConfig {
                 .build();
     }
 
+    /**
+     * Tagt die API
+     * @return {@link Docket Docket}
+     */
     @Bean
     public Docket tagsApi() {
         return new Docket(DocumentationType.SWAGGER_2)
